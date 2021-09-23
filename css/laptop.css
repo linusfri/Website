@@ -1,0 +1,333 @@
+/* FOUNDATION */
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* BASE */
+html {
+    font-size: 16px;
+    max-width: 1366px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+h1, 
+h2,
+h3,
+p {
+
+    line-height: 1.5;
+}
+
+h1, 
+h2,
+h3,
+p {
+    margin: .5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: .5rem;
+}
+
+hr.solid {
+    color: lightgrey;
+    border-top: 1px;
+    padding: 0 .5rem;
+    display: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.active {
+    border-color: rgba(0, 0, 0, 0.8);
+    border-bottom: solid 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+textarea {
+    font-family: sans-serif;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+/* PROJECT */
+
+/*** HEADER  ***/
+
+.header-section-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-section-mid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-section-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.site-branding {
+    display: none;
+}
+
+.site-branding-desktop {
+    display: block;
+    max-width: 200px;
+}
+
+.main-menu-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-menu-desktop a {
+    padding: 1rem;
+    margin: 0 1rem 0 1rem;
+    font-size: 1rem;
+}
+
+.main-menu-desktop a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.header-button {
+    display: none;
+}
+
+.cart-icon {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 50px;
+    padding: 10px 40px;
+}
+
+/* BODY */
+
+/*** SÖKRUTA  ***/
+
+.nav-search-desktop {
+    display: block;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.topnav-left {
+    display: none;
+}
+
+.search-desktop {
+    width: 33.33%;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: .5rem;
+}
+
+.banner-title {
+    background-color: rgba(0, 0, 0, .4);
+    color: rgba(255, 255, 255, .9);
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+}
+
+/*** Produktgrid (startsida samt produktsida) ***/
+.product-grid {
+    
+    display: grid;
+    grid-column: span 3;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: .5rem;
+    
+}
+/*** Produktsida, enskild ***/
+.product-ind-main {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin: 0;
+    grid-column: span 3;
+    
+}
+
+.product-ind-heading{
+    grid-row:1;
+    grid-column: 2;
+    padding: .5rem;
+}
+
+.product-ind-img {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1rem auto auto auto;
+    padding: .5rem;
+    max-width: 400px;
+}
+
+.product-ind-stock {
+    grid-column: 2;
+    grid-row: 1;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: left;
+    font-weight: 600;
+}
+
+.product-ind-buttons {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+.product-ind-tabs {
+    grid-column: 2;
+    grid-row: 3 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+}
+
+.product-ind-tab {
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+.product-ind-desc {
+    grid-column: 2;
+    grid-row: 4;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.product-ind-spec {
+    grid-column: 2;
+    grid-row: 4;
+    padding-left: .5rem;
+    margin-top: 1rem;
+    display: block; 
+}
+
+.services-video {
+    max-width: 100%;
+}
+    
+.services-video iframe {
+    height: 300px;
+    width: 500px;
+    border: none;
+}
+
+/*** BANNERS  ***/
+.banner-grid-container {
+    display: grid;
+    padding: .5rem;
+    grid-column: span 3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "sb1 sb2 sb3"
+    "sbt1 sbt2 sbt3";
+    gap: .5rem;
+    
+}
+
+.grid-main-4col {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    background-image: url("../images/boka_hamta.png");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.small-banner-1 {grid-area: sb1;}
+.small-banner-2 {grid-area: sb2;}
+.small-banner-3 {grid-area: sb3;}
+
+.small-banner-text-1 {grid-area: sbt1;}
+.small-banner-text-2 {grid-area: sbt2;}
+.small-banner-text-3 {grid-area: sbt3;}
+
+/* KONTAKTSIDA */
+
+.contact {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: .5rem;
+    gap: .5rem;
+    grid-template-areas: 
+    "ctcmap ctcmap ctcmap"
+    "ctcimg ctcinf ctcinf"
+    ;
+
+}
+
+.contact-img {
+    grid-area: ctcimg;
+}
+
+.contact-information {
+    grid-area: ctcinf;
+    margin: 0;
+}
+
+.contact-maps {
+    grid-area: ctcmap;
+    width: 100%;
+    height: 500px;
+    
+}

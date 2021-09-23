@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridövning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:767px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(min-width:992px)" href="css/laptop.css">
+    <link rel="stylesheet" media="(min-width:1200px)" href="css/desktop.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script src="js/grid-ovning.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+
+    
+       <!-- Col 1 -->
+        <div class="header-section-left">
+            <div class="site-branding-desktop">
+                <a href="index.html">
+                    <img src="./images/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- Hamburgare och sök -->
+            <div class="topnav-left">
+                <button class="header-button" onclick="mobileMenu()"> <i class="fa fa-bars"></i>  </button>
+                <button class="header-button" onclick="search()"> <i class="fa fa-search"></i>  </button>
+            </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="header-section-mid">
+            <div class="site-branding">
+                <a href="index.html">
+                    <img src="./images/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- Desktopmeny -->
+            <div class="main-menu-desktop">
+                <a href="index.html">Hem</a>
+                <a href="produkter.html">Produkter</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>  
+        </div>
+       
+        <!-- Col 3 -->
+        <div class="header-section-right">
+
+            <div class="topnav-right">
+                <button class="cart-icon"> <i class="fa fa-shopping-cart "></i> </button>
+            </div>
+            
+        </div>
+    </header>
+
+    <nav class = "nav-search-desktop">
+        <div>
+            <input class="search-desktop" type="search" placeholder="Sök produkt">
+        </div>   
+    </nav>
+
+    <main class="grid-main">
+        <!-- Mobilmeny -->
+
+        <div class="menu-links main-menu" id="menu-links">
+            <a href="index.html">Hem</a>
+            <a href="produkter.html">Produkter</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+
+        <!-- Sökruta -->
+        <div class="main-search" id="input">
+            <input class="search" type="search" placeholder="Sök produkt">
+        </div>     
+
+     <!-- Produktgrid -->
+     <div class = "product-site-heading">
+        <h2>Produkter</h2>
+        <p>Här hittar du vårt utbud av hantverksartiklar.</p>
+        <hr class = "solid">
+    </div>
+
+
+        <section class = "product-grid">
+            <div class = "product">
+                <img src="./images/Skarbrada_1.jpg" alt="Skärbräda alfa">
+                <h3 class = "product-title"> Skärbräda Alfa </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_alfa.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_2.jpg" alt="Skärbräda beta">
+                <h3 class = "product-title"> Skärbräda Beta </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_beta.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_2.jpg" alt="Skärbräda gamma">
+                <h3 class = "product-title"> Skärbräda Gamma </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_gamma.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_1.jpg" alt="Skärbräda delta">
+                <h3 class = "product-title"> Skärbräda Delta </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_delta.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_1.jpg" alt="Skärbräda epsilon">
+                <h3 class = "product-title"> Skärbräda Epsilon </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_epsilon.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_2.jpg" alt="Skärbräda zeta">
+                <h3 class = "product-title"> Skärbräda Zeta </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_zeta.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_2.jpg" alt="Skärbräda eta">
+                <h3 class = "product-title"> Skärbräda Eta </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_eta.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_1.jpg" alt="Skärbräda theta">
+                <h3 class = "product-title"> Skärbräda Theta </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_theta.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_1.jpg" alt="Skärbräda jota">
+                <h3 class = "product-title"> Skärbräda Jota </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_jota.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_1.jpg" alt="Skärbräda kappa">
+                <h3 class = "product-title"> Skärbräda Kappa </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_kappa.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_1.jpg" alt="Skärbräda kappa">
+                <h3 class = "product-title"> Skärbräda Lambda </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_lambda.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+            <div class = "product">
+                <img src="./images/Skarbrada_1.jpg" alt="Skärbräda kappa">
+                <h3 class = "product-title"> Skärbräda My </h3>
+                <p class="product-meta">300kr</p>
+                <a href="produkt_my.html"> <button class = "product-button"> Läs mer </button></a>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="grid-footer">
+            <div class = "contact-footer">
+                <h3>Kontakta oss</h3>
+                <a href="kontakt.html">Kontakt</a>
+                <h3>Sociala medier</h3>
+                <span class = "contact-footer-social">
+                    <a href="https://www.facebook.com/"><i class = "fa fa-facebook fa-2x"></i></a>
+                    <a href="https://instagram.com/"><i class = "fa fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/"><i class = "fa fa-twitter fa-2x"></i></a>
+                </span>
+            </div>
+
+            <div class = "company-information">
+                <h3>Företagsinformation</h3>
+                <p>Skapat</p>
+                <p>Hittepåvägen 23</p>
+                <p>53489 Avlatssund</p>
+                <a href="index.html"><img class = footer-img src="./images/logo.jpg" alt=""></a>
+                
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

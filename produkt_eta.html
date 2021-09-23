@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridövning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:767px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(min-width:992px)" href="css/laptop.css">
+    <link rel="stylesheet" media="(min-width:1200px)" href="css/desktop.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script src="js/grid-ovning.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+
+    
+       <!-- Col 1 -->
+        <div class="header-section-left">
+            <div class="site-branding-desktop">
+                <a href="index.html">
+                    <img src="./images/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- Hamburgare och sök -->
+            <div class="topnav-left">
+                <button class="header-button" onclick="mobileMenu()"> <i class="fa fa-bars"></i>  </button>
+                <button class="header-button" onclick="search()"> <i class="fa fa-search"></i>  </button>
+            </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="header-section-mid">
+            <div class="site-branding">
+                <a href="index.html">
+                    <img src="./images/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- Desktopmeny -->
+            <div class="main-menu-desktop">
+                <a href="index.html">Hem</a>
+                <a href="produkter.html">Produkter</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>  
+        </div>
+       
+        <!-- Col 3 -->
+        <div class="header-section-right">
+
+            <div class="topnav-right">
+                <button class="cart-icon"> <i class="fa fa-shopping-cart "></i> </button>
+            </div>
+            
+        </div>
+    </header>
+
+    <nav class = "nav-search-desktop">
+        <div>
+            <input class="search-desktop" type="search" placeholder="Sök produkt">
+        </div>   
+    </nav>
+
+    <main class="grid-main">
+        <!-- Mobilmeny -->
+
+        <div class="menu-links main-menu" id="menu-links">
+            <a href="index.html">Hem</a>
+            <a href="produkter.html">Produkter</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+
+        <!-- Sökruta -->
+        <div class="main-search" id="input">
+            <input class="search" type="search" placeholder="Sök produkt">
+        </div>  
+
+        <!-- Individuell produktsida -->
+        <div class="product-ind-main">
+            <div class = "product-ind-heading">
+                <h1>Skärbräda Eta</h1>
+                <p>Artikelnummer: 1006</p>
+            </div>
+            <div class="product-ind-img">
+                <img src="./images/Skarbrada_2.jpg" alt="">
+            </div>
+            <div class="product-ind-stock">
+                <i class = "fa fa-check fa-1x"></i>
+                <p>Finns i lager</p>
+            </div>
+            <div class = "product-ind-buttons">
+                <a href="produkt_gamma.html"> <button class = "product-button">Lägg i varukorg</button></a>
+                <a href="produkt_gamma.html"> <button class = "product-button"> Boka och hämta</button></a>
+            </div>
+
+            <hr class="solid">
+
+            <div class="product-ind-tabs">
+                <button id = "product-ind-desc-tab" class="product-ind-tab active" onclick="productDesc()">Beskrivning</button>
+                <button id = "product-ind-spec-tab" class="product-ind-tab" onclick="productSpec()">Specifikationer</button>
+            </div>
+            <div id = "product-ind-desc" class="product-ind-desc">
+                <h2>Beskrivning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis velit rerum iure blanditiis ex fugit atque distinctio, cupiditate maiores sit nulla error, consectetur autem? Nobis fuga eum earum sapiente reiciendis, error doloremque accusantium nam debitis ducimus! Aliquam quae, ipsum asperiores vel atque consectetur nihil ex. Quas impedit doloremque dolor!</p>
+            </div>
+            <div id = "product-ind-spec" class="product-ind-spec">
+                <h2>Specifikationer</h2>
+                <ul class="product-ind-ul">
+                    <li>
+                        <h4>Tillverkningsland</h4>
+                        <p>Sverige</p>
+                    </li>
+                    <li>
+                        <h4>Storlek</h4>
+                        <p>Mellan</p>
+                    </li>
+                    <li>
+                        <h4>Material</h4>
+                        <p>Trä</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="grid-footer">
+            <div class = "contact-footer">
+                <h3>Kontakta oss</h3>
+                <a href="kontakt.html">Kontakt</a>
+                <h3>Sociala medier</h3>
+                <span class = "contact-footer-social">
+                    <a href="https://www.facebook.com/"><i class = "fa fa-facebook fa-2x"></i></a>
+                    <a href="https://instagram.com/"><i class = "fa fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/"><i class = "fa fa-twitter fa-2x"></i></a>
+                </span>
+            </div>
+
+            <div class = "company-information">
+                <h3>Företagsinformation</h3>
+                <p>Skapat</p>
+                <p>Hittepåvägen 23</p>
+                <p>53489 Avlatssund</p>
+                <a href="index.html"><img class = footer-img src="./images/logo.jpg" alt=""></a>
+                
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

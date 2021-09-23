@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridövning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width:767px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(min-width:992px)" href="css/laptop.css">
+    <link rel="stylesheet" media="(min-width:1200px)" href="css/desktop.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script src="js/grid-ovning.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+
+    
+       <!-- Col 1 -->
+        <div class="header-section-left">
+            <div class="site-branding-desktop">
+                <a href="index.html">
+                    <img src="./images/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- Hamburgare och sök -->
+            <div class="topnav-left">
+                <button class="header-button" onclick="mobileMenu()"> <i class="fa fa-bars"></i>  </button>
+                <button class="header-button" onclick="search()"> <i class="fa fa-search"></i>  </button>
+            </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="header-section-mid">
+            <div class="site-branding">
+                <a href="index.html">
+                    <img src="./images/logo.jpg" alt="">
+                </a>
+            </div>
+
+            <!-- Desktopmeny -->
+            <div class="main-menu-desktop">
+                <a href="index.html">Hem</a>
+                <a href="produkter.html">Produkter</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>  
+        </div>
+       
+        <!-- Col 3 -->
+        <div class="header-section-right">
+
+            <div class="topnav-right">
+                <button class="cart-icon"> <i class="fa fa-shopping-cart "></i> </button>
+            </div>
+            
+        </div>
+    </header>
+
+    <nav class = "nav-search-desktop">
+        <div>
+            <input class="search-desktop" type="search" placeholder="Sök produkt">
+        </div>   
+    </nav>
+
+    <main class="grid-main">
+        <!-- Mobilmeny -->
+
+        <div class="menu-links main-menu" id="menu-links">
+            <a href="index.html">Hem</a>
+            <a href="produkter.html">Produkter</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+
+        <!-- Sökruta -->
+        <div class="main-search" id="input">
+            <input class="search" type="search" placeholder="Sök produkt">
+        </div>    
+       <!-- Kontakt -->
+        <section class="contact">
+            <div class="contact-img">
+                <img src="./images/contact.png" alt="">
+            </div>
+            <div class="contact-information">
+                <div class="contact-text">
+                    <h3>Kontakt</h3>
+                    <p>Du kan kontakta oss via epost eller telefon.</p>
+                </div>
+                <div class="contact-channels">
+                    <i class="fa fa-phone fa-2x"></i>
+                    <h3>0760-162xxx</h3>
+                    <h3></h3>
+                </div>
+                <div class="contact-channels">
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <a href="mailto: info@skapat.se"> <h3>Maila oss</h3></a>
+                    <h3></h3>
+                </div>
+
+                <div>
+                    <form class="contact-form">
+                        <h3>Kontaktformulär</h3>
+                        <input type="text" placeholder="Namn">
+                        <input type="email" placeholder="E-post">
+                        <input type="text" placeholder="Ärende">
+                        <textarea name="Meddelande" placeholder="Ditt Meddelande" cols="30" rows="10"></textarea>
+                        <button>Skicka</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33345.079153727245!2d13.112864672563553!3d58.510221066937916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4644d334d53f5df3%3A0xbcb557250fbd540d!2sLidk%C3%B6ping!5e0!3m2!1ssv!2sse!4v1610477200126!5m2!1ssv!2sse" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+        
+
+    <footer>
+
+        <div class="grid-footer">
+            <div class = "contact-footer">
+                <h3>Kontakta oss</h3>
+                <a href="kontakt.html">Kontakt</a>
+                <h3>Sociala medier</h3>
+                <span class = "contact-footer-social">
+                    <a href="https://www.facebook.com/"><i class = "fa fa-facebook fa-2x"></i></a>
+                    <a href="https://instagram.com/"><i class = "fa fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/"><i class = "fa fa-twitter fa-2x"></i></a>
+                </span>
+            </div>
+
+            <div class = "company-information">
+                <h3>Företagsinformation</h3>
+                <p>Skapat</p>
+                <p>Hittepåvägen 23</p>
+                <p>53489 Avlatssund</p>
+                <a href="index.html"><img class = footer-img src="./images/logo.jpg" alt=""></a>
+                
+            </div>
+        </div>
+
+    </footer>
+
+    
+</body>
+
+</html>

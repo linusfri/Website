@@ -1,0 +1,115 @@
+/* FOUNDATION */
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* BASE */
+html {
+    font-size: 14px;
+    max-width: 768px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+h1, 
+h2,
+h3,
+p {
+
+    line-height: 1.5;
+}
+
+h1, 
+h2,
+h3,
+p {
+    margin: .5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: .5rem;
+}
+
+hr.solid {
+    color: lightgrey;
+    border-top: 1px;
+    padding: 0 .5rem;
+    display:none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.active {
+    border-color: rgba(0, 0, 0, 0.8);
+    border-bottom: solid 2px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+textarea {
+    font-family: sans-serif;
+    padding: .5rem;
+    max-width: 100%;
+}
+
+/* PROJECT */
+
+/*** HEADER ***/
+
+.site-branding-desktop {
+    display: none;   
+}
+
+
+/* BODY */
+
+/*** SÖKRUTA DESKTOP  ***/
+
+.nav-search-desktop {
+    display: none;
+    
+}
+
+.services-video {
+    max-width: 100%;
+}
+    
+.services-video iframe {
+    height: 300px;
+    width: 500px;
+    border: none;
+}
+
+/*** Produktgrid (startsida samt produktsida) ***/
+.product-grid {
+    
+    display: grid;
+    grid-column: span 3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: .5rem;
+    
+}
